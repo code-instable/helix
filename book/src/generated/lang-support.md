@@ -282,6 +282,7 @@
 | starlark | ✓ | ✓ | ✓ |  | ✓ | `starpls`, `buck2` |
 | strace | ✓ |  |  |  |  |  |
 | strictdoc | ✓ |  |  | ✓ |  |  |
+| stylus | ✓ | ✓ | ✓ | ✓ |  | `stylus-language-server` |
 | styx | ✓ | ✓ | ✓ |  | ✓ | `styx` |
 | supercollider | ✓ |  |  |  |  |  |
 | svelte | ✓ | ✓ | ✓ | ✓ | ✓ | `svelteserver` |

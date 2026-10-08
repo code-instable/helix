@@ -295,6 +295,10 @@ inlayHints.functionLikeReturnTypes.enabled = true
 inlayHints.enumMemberValues.enabled = true
 inlayHints.parameterNames.enabled = "all"
 
+[language-server.stylus-lsp]
+command = "stylus-language-server"
+args = ["--stdio"]
+
 [language-server.vscode-eslint-language-server]
 command = "vscode-eslint-language-server"
 args = ["--stdio"]
@@ -1125,6 +1129,20 @@ indent = { tab-width = 2, unit = "  " }
 [[grammar]]
 name = "less"
 source = { git = "https://github.com/jimliang/tree-sitter-less", rev = "e5ae6245f841b5778c79ac93b28fa4f56b679c5d" }
+
+[[language]]
+name = "stylus"
+scope = "source.stylus"
+injection-regex = "styl(us)?"
+file-types = ["styl", "stylus"]
+comment-tokens = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+language-servers = [ "stylus-lsp" ]
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "stylus"
+source = { git = "https://github.com/WMikhail/tree-sitter-stylus", rev = "67a9c87f2f2ae5e25365cdb4483aa9ebbaadecff" }
 
 [[language]]
 name = "html"
